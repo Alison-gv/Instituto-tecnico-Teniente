@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.caja{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 20px;
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(.89,.14,.83,.67);
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    
+}
+@keyframes animacion {
+    0%{
+        left: 0;
+        top: 0;
+      }
+    25%{top: 0;
+    left: 400px;}
+    50%{top: 400px;
+        left: 400px;}
+    75%{top: 400px;
+        left: 0;}
+    100%{top: 0;
+        left: 0;}
+}
